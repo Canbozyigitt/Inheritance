@@ -28,4 +28,9 @@ public class Akademisyen extends Calisan {
     public void derseGir(){
         System.out.println(this.getAdSoyad()+" derse giriş yaptı ");
     }
+    @Override
+    //overridenin amacı aynı metottan 1 den fazla varsa ilk cağırılan clasa bakar diğer sınıflardaki metotdu ezer!!!
+    public void giris(){
+        System.out.println(this.getAdSoyad()+" okulun a kapısından giriş yaptı");
+    }
 }
